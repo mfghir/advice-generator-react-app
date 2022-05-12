@@ -1,6 +1,5 @@
 import "./App.css";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const App = () => {
@@ -28,9 +27,9 @@ const App = () => {
   return (
     <div className="app">
       <div className="card">
-        <h1 className="heading">{advice}</h1>
+        <h2>{advice}</h2>
         <button className="btn" onClick={() => fetchAdvice()}>
-          <span>Give Me Advice!</span>
+          Give Me an Advice!
         </button>
       </div>
     </div>
